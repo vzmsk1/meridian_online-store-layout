@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230116173002">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230118180136">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -525,7 +525,7 @@
 							<span class="item-footer__heading">
 								Join Meridian for Exclusive Offers
 							</span>
-							<form data-dev data-popup-message="#formMessage" action="#" class="item-footer__form form-item-footer">
+							<form data-dev data-popup-message="#formMessage" action="#" class="item-footer__form form-item-footer form">
 								<div class="form-item-footer__input">
 									<input data-validate data-required="email" autocomplete="off" type="text" name="form[]" data-error placeholder="Email address" class="input" />
 								</div>
@@ -562,18 +562,18 @@
 							</li>
 						</ul>
 					</div>
-					<ul class="footer__payments payments-footer">
-						<li class="payments-footer__item">
-							<a href="#" class="payments-footer__link"><picture><source srcset="img/payment/01.webp" type="image/webp"><img src="img/payment/01.png" alt="" /></picture></a>
+					<ul class="footer__payment payment">
+						<li class="payment__item">
+							<a href="#" class="payment__link"><picture><source srcset="img/payment/01.webp" type="image/webp"><img src="img/payment/01.png" alt="" /></picture></a>
 						</li>
-						<li class="payments-footer__item">
-							<a href="#" class="payments-footer__link"><picture><source srcset="img/payment/02.webp" type="image/webp"><img src="img/payment/02.png" alt="" /></picture></a>
+						<li class="payment__item">
+							<a href="#" class="payment__link"><picture><source srcset="img/payment/02.webp" type="image/webp"><img src="img/payment/02.png" alt="" /></picture></a>
 						</li>
-						<li class="payments-footer__item">
-							<a href="#" class="payments-footer__link"><picture><source srcset="img/payment/03.webp" type="image/webp"><img src="img/payment/03.png" alt="" /></picture></a>
+						<li class="payment__item">
+							<a href="#" class="payment__link"><picture><source srcset="img/payment/03.webp" type="image/webp"><img src="img/payment/03.png" alt="" /></picture></a>
 						</li>
-						<li class="payments-footer__item">
-							<a href="#" class="payments-footer__link"><picture><source srcset="img/payment/04.webp" type="image/webp"><img src="img/payment/04.png" alt="" /></picture></a>
+						<li class="payment__item">
+							<a href="#" class="payment__link"><picture><source srcset="img/payment/04.webp" type="image/webp"><img src="img/payment/04.png" alt="" /></picture></a>
 						</li>
 					</ul>
 				</div>
@@ -591,7 +591,64 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230116173002"></script>
+
+	<div id="writeReview" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__icon _icon-plus"></span>
+				</button>
+				<form data-dev class="review-form form">
+					<div class="review-form__head head-review-form">
+						<div class="head-review-form__content">
+							<span class="head-review-form__heading">Please share your experience</span>
+							<span class="head-review-form__product-name">Alma Velvet Armless</span>
+							<p class="head-review-form__text text">Your feedback will help other shoppers make good choices, and we'll use it to improve our products.</p>
+						</div>
+						<div class="head-review-form__image-ibg"><picture><source data-srcset="img/product-slider/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/01.jpg" alt="Alma Velvet Armless"></picture></div>
+					</div>
+					<div class="review-form__body">
+						<div class="review-form__group">
+							<span class="review-form__label _required">Overall rating</span>
+							<div class="review-form__rating">
+								<div data-validate data-required="rating" data-error="Please select an overall rating" class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">0</div>
+								</div>
+							</div>
+						</div>
+						<div class="review-form__group">
+							<span class="review-form__label _required">Review</span>
+							<div class="review-form__input-wrap hint">
+								<textarea data-validate data-required min-length="50" autocomplete="off" name="form[]" data-error="Your review must be at least 50 characters in length" data-hint="(minimum 50 characters)" class="input"></textarea>
+								<span class="review-form__hint-text _icon-hint hint-text"></span>
+							</div>
+						</div>
+						<div class="review-form__group">
+							<span class="review-form__label">Review title</span>
+							<div class="review-form__input-wrap hint">
+								<input data-validate data-required max-length="150" autocomplete="off" data-error="Your review title must be 150 characters or less" data-hint="(150 characters or less)" type="text" name="form[]" class="input">
+								<span class="review-form__hint-text _icon-hint hint-text"></span>
+							</div>
+						</div>
+						<div class="review-form__actions">
+							<button type="submit" class="review-form__btn btn"><span class="text">Submit</span></button>
+						</div>
+						</d>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230118180136"></script>
 </body>
 
 </html>
