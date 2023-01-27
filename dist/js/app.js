@@ -2588,6 +2588,19 @@
                 FLS(`[Формы]: ${message}`);
             }
         }
+        function formQuantity() {
+            document.addEventListener("click", (function(e) {
+                let targetElement = e.target;
+                if (targetElement.closest(".quantity__button")) {
+                    let value = parseInt(targetElement.closest(".quantity").querySelector("input").value);
+                    if (targetElement.classList.contains("quantity__button_plus")) value++; else {
+                        --value;
+                        if (value < 1) value = 1;
+                    }
+                    targetElement.closest(".quantity").querySelector("input").value = value;
+                }
+            }));
+        }
         function formRating() {
             const ratings = document.querySelectorAll(".rating");
             if (ratings.length > 0) initRatings();
@@ -7495,8 +7508,71 @@
                     filterCatalog.classList.remove("_active");
                 }
             }));
+            const removeCartItemButtons = document.getElementsByClassName("product-cart-checkout__remove");
+            const quantityInputs = document.getElementsByClassName("quantity__inp");
+            const optionsItems = document.getElementsByClassName("options__input");
+            for (let i = 0; i < optionsItems.length; i++) {
+                const optionsItem = optionsItems[i];
+                optionsItem.addEventListener("change", updateCartSubtotal);
+            }
+            for (let i = 0; i < quantityInputs.length; i++) {
+                const input = quantityInputs[i];
+                input.addEventListener("change", quantityChanged);
+                document.addEventListener("click", (function(e) {
+                    if (e.target.closest(".quantity__button")) quantityChanged(e);
+                }));
+            }
+            for (let i = 0; i < removeCartItemButtons.length; i++) {
+                const button = removeCartItemButtons[i];
+                button.addEventListener("click", removeCartItem);
+            }
+            function quantityChanged(e) {
+                const input = e.target;
+                if (isNaN(input.value) || input.value <= 0) input.value = 1;
+                updateCartSubtotal();
+            }
+            function itemsCount() {
+                const cartItems = document.getElementsByClassName("cart-checkout__product");
+                const cartItemsCounter = document.querySelector(".checkout__counter");
+                cartItemsCounter.innerText = cartItems.length + " items";
+                if (!cartItems.length) document.querySelector(".cart").classList.add("empty-state"); else document.querySelector(".cart").classList.remove("empty-state");
+                if (1 === cartItems.length) cartItemsCounter.innerText = "1 item";
+            }
+            function removeCartItem(e) {
+                const buttonClicked = e.target;
+                buttonClicked.parentElement.remove();
+                itemsCount();
+                updateCartSubtotal();
+            }
+            function updateCartSubtotal() {
+                const cartItemContainer = document.getElementsByClassName("cart-checkout__products")[0];
+                const cartRows = cartItemContainer.getElementsByClassName("cart-checkout__product");
+                let subtotal = 0;
+                for (let i = 0; i < cartRows.length; i++) {
+                    const cartRow = cartRows[i];
+                    const priceElement = cartRow.getElementsByClassName("product-cart-checkout__price")[0];
+                    const quantityElement = cartRow.getElementsByClassName("quantity__inp")[0];
+                    const price = parseFloat(priceElement.innerText.replace("£", ""));
+                    const quantity = quantityElement.value;
+                    subtotal += price * quantity;
+                }
+                subtotal = Math.round(100 * subtotal) / 100;
+                document.getElementsByClassName("price-summary-checkout__price_subtotal")[0].innerText = "£" + subtotal;
+                updateCartTotal(subtotal);
+            }
+            function updateCartTotal(subtotal) {
+                const optionsItems = document.getElementsByClassName("options__input");
+                for (let i = 0; i < optionsItems.length; i++) {
+                    const optionsItem = optionsItems[i];
+                    if (optionsItem.checked) {
+                        const shippingOptionPrice = parseFloat(optionsItem.parentElement.querySelector(".options__text span").innerText.replace("£", ""));
+                        let total = subtotal + shippingOptionPrice;
+                        document.getElementsByClassName("price-summary-checkout__price_total")[0].innerText = "£" + total;
+                    }
+                }
+            }
         }));
-        window["FLS"] = true;
+        window["FLS"] = false;
         isWebp();
         menuInit();
         spoilers();
@@ -7504,6 +7580,7 @@
             viewPass: false
         });
         formSubmit();
+        formQuantity();
         formRating();
         headerScroll();
     })();

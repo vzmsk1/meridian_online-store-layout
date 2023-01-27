@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>About Us</title>
+	<title>Cart</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -104,46 +104,113 @@
 							<li class="breadcrumbs__item">
 								<a href="home.html" class="breadcrumbs__link">HOME</a>
 							</li>
-							<li class="breadcrumbs__item"><span>About us</span></li>
+							<li class="breadcrumbs__item"><span>SHOPPING CART</span></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
-			<div class="about">
-				<section class="about__hero hero-about">
-					<div class="hero-about__container">
-						<h2 class="hero-about__title h2">Meridian Furniture</h2>
-						<p class="hero-about__text text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-							rhoncus montes, sem lacus, sed sit sed. Scelerisque aliquam
-							justo tincidunt vitae ultricies enim eget. Et sodales quis odio
-							at risus semper. Et ante in.
-						</p>
-						<a href="#" class="hero-about__btn btn"><span class="text text_wide">See Our collections</span></a>
-					</div>
-					<div class="hero-about__image-ibg bg">
-						<picture><source data-srcset="img/bg-images/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/bg-images/05.jpg" alt="" /></picture>
-					</div>
-				</section>
-				<div class="about__image-text image-text">
-					<div class="image-text__container">
-						<div class="image-text__image-ibg"><picture><source data-srcset="img/image-text/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/image-text/01.png" alt=""></picture></div>
-						<div class="image-text__content">
-							<h2 class="image-text__title h2">We Are Meridian</h2>
-							<p class="image-text__text text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nulla a ut diam et, sapien dis. Iaculis
-								turpis dui sed
-								ipsum etiam. Habitant feugiat at enim pharetra. Lacus, dolor viverra amet purus nulla a, donec in
-								egestas. Condimentum
-								aenean odio pretium justo. Vitae in ut quam fermentum, eget. Luctus fermentum nulla magna eget at
-								dapibus urna sit. Id
-								non non arcu consequat at. Integer tortor interdum sit in quis fringilla euismod eros. Aliquam in enim
-								morbi pulvinar.
-								Sagittis accumsan pellentesque egestas ac massa sed sem. Mattis leo elementum dictum dolor faucibus. A
-								sapien, nisi,
-								justo euismod morbi.</span>
-							</p>
+			<div class="cart">
+				<form action="#" class="cart__checkout checkout">
+					<div class="checkout__container">
+						<div class="checkout__column">
+							<div class="checkout__head">
+								<h2 class="checkout__title h2">Shopping Cart</h2>
+								<span class="checkout__counter text">2 items</span>
+							</div>
+							<div class="checkout__cart cart-checkout">
+								<div class="cart-checkout__head">
+									<span class="cart-checkout__heading">Products</span>
+									<span class="cart-checkout__heading">Quantity</span>
+									<span class="cart-checkout__heading">Price</span>
+								</div>
+								<div class="cart-checkout__products">
+									<div class="cart-checkout__product product-cart-checkout">
+										<div class="product-cart-checkout__image-ibg">
+											<picture><source data-srcset="img/shopify/sets/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/01.png" alt="Serene Linen Deluxe Cloud" /></picture>
+										</div>
+										<span class="product-cart-checkout__product-name text">Serene Linen Deluxe Cloud</span>
+										<div class="product-cart-checkout__quantity quantity">
+											<button type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input autocomplete="off" type="text" name="form[]" value="1" class="quantity__inp" />
+											</div>
+											<button type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<span class="product-cart-checkout__price text">£2500</span>
+										<button type="button" class="product-cart-checkout__remove _icon-plus"></button>
+									</div>
+									<div class="cart-checkout__product product-cart-checkout">
+										<div class="product-cart-checkout__image-ibg">
+											<picture><source data-srcset="img/shopify/sets/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/02.png" alt="Hilton Boucle Fabric Chaise Lounge" /></picture>
+										</div>
+										<span class="product-cart-checkout__product-name text">Hilton Boucle Fabric Chaise Lounge</span>
+										<div class="product-cart-checkout__quantity quantity">
+											<button type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input autocomplete="off" type="text" name="form[]" value="1" class="quantity__inp" />
+											</div>
+											<button type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<span class="product-cart-checkout__price text">£2500</span>
+										<button type="button" class="product-cart-checkout__remove _icon-plus"></button>
+									</div>
+								</div>
+							</div>
 						</div>
+						<div class="checkout__column">
+							<div class="checkout__head">
+								<h2 class="checkout__title h2">Order Summary</h2>
+							</div>
+							<div class="checkout__summary summary-checkout">
+								<div class="summary-checkout__price price-summary-checkout">
+									<span class="price-summary-checkout__label">Subtotal</span>
+									<span class="price-summary-checkout__price price-summary-checkout__price_subtotal text">£5000</span>
+								</div>
+								<div class="summary-checkout__options options">
+									<div class="options__item">
+										<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option" />
+										<label for="o_1" class="options__label"><span class="options__text">Standard Free Shipping <span>£0</span></span></label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_2" class="options__input" type="radio" value="2" name="option" />
+										<label for="o_2" class="options__label"><span class="options__text">Premium Shipping <span>£118.80</span></span></label>
+									</div>
+								</div>
+								<div class="summary-checkout__price price-summary-checkout">
+									<span class="price-summary-checkout__label">Total</span>
+									<span class="price-summary-checkout__price price-summary-checkout__price_total text">£5000</span>
+								</div>
+								<button type="button" class="summary-checkout__btn btn">
+									<span class="text">Proceed To Checkout</span>
+								</button>
+								<ul class="summary-checkout__payment payment">
+									<li class="payment__item">
+										<a href="#" class="payment__link"><picture><source srcset="img/payment/01.webp" type="image/webp"><img src="img/payment/01.png" alt="" /></picture></a>
+									</li>
+									<li class="payment__item">
+										<a href="#" class="payment__link"><picture><source srcset="img/payment/02.webp" type="image/webp"><img src="img/payment/02.png" alt="" /></picture></a>
+									</li>
+									<li class="payment__item">
+										<a href="#" class="payment__link"><picture><source srcset="img/payment/03.webp" type="image/webp"><img src="img/payment/03.png" alt="" /></picture></a>
+									</li>
+									<li class="payment__item">
+										<a href="#" class="payment__link"><picture><source srcset="img/payment/04.webp" type="image/webp"><img src="img/payment/04.png" alt="" /></picture></a>
+									</li>
+								</ul>
+								<p class="summary-checkout__text">
+									Discount prices will be active after entering the checkout
+									process
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="cart__empty-state">
+					<div class="cart__container">
+						<p class="cart__text">
+							You don’t have any items in your cart yet.
+						</p>
+						<a href="#" class="cart__btn btn"><span class="text">Shop Now</span></a>
 					</div>
 				</div>
 			</div>
