@@ -608,6 +608,11 @@ textarea {
   appearance: none;
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 input[type=number] {
   -moz-appearance: textfield;
 }
