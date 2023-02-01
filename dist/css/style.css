@@ -365,6 +365,10 @@ h6 {
   color: #848484;
 }
 
+.review-form__rating .form__error {
+  top: 102%;
+}
+
 @supports (height: clamp( 2.8125rem , 0.9376952972rem  +  3.9059448481vw , 3.4375rem )) {
   .review-form__input-wrap input {
     height: clamp( 2.8125rem , 0.9376952972rem  +  3.9059448481vw , 3.4375rem );
@@ -396,15 +400,15 @@ h6 {
   color: #848484;
 }
 
-@supports (font-size: clamp( 0.8125rem , 0.2500585892rem  +  1.1717834544vw , 1rem )) {
+@supports (font-size: clamp( 0.625rem , -0.0178404018rem  +  1.3392857143vw , 0.8125rem )) {
   .review-form__hint-text {
-    font-size: clamp( 0.8125rem , 0.2500585892rem  +  1.1717834544vw , 1rem );
+    font-size: clamp( 0.625rem , -0.0178404018rem  +  1.3392857143vw , 0.8125rem );
   }
 }
 
-@supports not (font-size: clamp( 0.8125rem , 0.2500585892rem  +  1.1717834544vw , 1rem )) {
+@supports not (font-size: clamp( 0.625rem , -0.0178404018rem  +  1.3392857143vw , 0.8125rem )) {
   .review-form__hint-text {
-    font-size: calc(0.8125rem + 0.1875 * (100vw - 47.99875rem) / 16.00125);
+    font-size: calc(0.625rem + 0.1875 * (100vw - 47.99875rem) / 14);
   }
 }
 
