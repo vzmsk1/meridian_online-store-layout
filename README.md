@@ -1,3 +1,14 @@
+## languages and tools that i used:
+
++ html, css
++ js
++ sass (scss)
++ bem methodology
++ slider - swiper
++ icons font
++ grid, flexbox
++ pixel perfect
+
 ## home page
 
 ![meridian-home](https://user-images.githubusercontent.com/114158560/215897969-60a7889a-61e8-4e28-b701-1a0d22d8c2e3.png)
