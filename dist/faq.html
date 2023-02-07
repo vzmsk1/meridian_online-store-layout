@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230201150533">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230207132628">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -501,11 +501,9 @@
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">
-					<span class="_icon-plus"><span></span>
+					<span class="_icon-plus"></span>
 				</button>
-				<p class="popup__text">
-					Message sent!
-				</p>
+				<p class="popup__text">Message sent!</p>
 			</div>
 		</div>
 	</div>
@@ -521,9 +519,14 @@
 						<div class="head-review-form__content">
 							<span class="head-review-form__heading">Please share your experience</span>
 							<span class="head-review-form__product-name">Alma Velvet Armless</span>
-							<p class="head-review-form__text text">Your feedback will help other shoppers make good choices, and we'll use it to improve our products.</p>
+							<p class="head-review-form__text text">
+								Your feedback will help other shoppers make good choices, and
+								we'll use it to improve our products.
+							</p>
 						</div>
-						<div class="head-review-form__image-ibg"><picture><source data-srcset="img/product-slider/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/01.jpg" alt="Alma Velvet Armless"></picture></div>
+						<div class="head-review-form__image-ibg">
+							<picture><source data-srcset="img/product-slider/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/01.jpg" alt="Alma Velvet Armless" /></picture>
+						</div>
 					</div>
 					<div class="review-form__body">
 						<div class="review-form__group">
@@ -533,11 +536,11 @@
 									<div class="rating__body">
 										<div class="rating__active"></div>
 										<div class="rating__items">
-											<input type="radio" class="rating__item" value="1" name="rating">
-											<input type="radio" class="rating__item" value="2" name="rating">
-											<input type="radio" class="rating__item" value="3" name="rating">
-											<input type="radio" class="rating__item" value="4" name="rating">
-											<input type="radio" class="rating__item" value="5" name="rating">
+											<input type="radio" class="rating__item" value="1" name="rating" />
+											<input type="radio" class="rating__item" value="2" name="rating" />
+											<input type="radio" class="rating__item" value="3" name="rating" />
+											<input type="radio" class="rating__item" value="4" name="rating" />
+											<input type="radio" class="rating__item" value="5" name="rating" />
 										</div>
 									</div>
 									<div class="rating__value">0</div>
@@ -547,26 +550,28 @@
 						<div class="review-form__group">
 							<span class="review-form__label _required">Review</span>
 							<div class="review-form__input-wrap hint">
-								<textarea data-validate data-required min-length="50" autocomplete="off" name="form[]" data-error="Your review must be at least 50 characters in length" data-hint="(minimum 50 characters)" class="input"></textarea>
+								<textarea data-validate data-required data-min-length="50" autocomplete="off" name="form[]" data-error="Your review must be at least 50 characters in length" data-hint="(minimum 50 characters)" class="input"></textarea>
 								<span class="review-form__hint-text _icon-hint hint-text"></span>
 							</div>
 						</div>
 						<div class="review-form__group">
 							<span class="review-form__label">Review title</span>
 							<div class="review-form__input-wrap hint">
-								<input data-validate data-required max-length="150" autocomplete="off" data-error="Your review title must be 150 characters or less" data-hint="(150 characters or less)" type="text" name="form[]" class="input">
+								<input data-validate data-required data-max-length="150" autocomplete="off" data-error="Your review title must be 150 characters or less" data-hint="(150 characters or less)" type="text" name="form[]" class="input" />
 								<span class="review-form__hint-text _icon-hint hint-text"></span>
 							</div>
 						</div>
 						<div class="review-form__actions">
-							<button type="submit" class="review-form__btn btn"><span class="text">Submit</span></button>
+							<button type="submit" class="review-form__btn btn">
+								<span class="text">Submit</span>
+							</button>
 						</div>
-						</d>
+					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230201150533"></script>
+	<script src="js/app.min.js?_v=20230207132628"></script>
 </body>
 
 </html>

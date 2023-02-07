@@ -2461,13 +2461,13 @@
                 } else if ("checkbox" === formRequiredItem.type && !formRequiredItem.checked) {
                     this.addError(formRequiredItem);
                     error++;
-                } else if (formRequiredItem.hasAttribute("min-length")) {
-                    if (formRequiredItem.value.length < formRequiredItem.getAttribute("min-length")) {
+                } else if (formRequiredItem.hasAttribute("data-min-length")) {
+                    if (formRequiredItem.value.length < formRequiredItem.getAttribute("data-min-length")) {
                         this.addError(formRequiredItem);
                         error++;
                     }
-                } else if (formRequiredItem.hasAttribute("max-length")) {
-                    if (formRequiredItem.value.length > formRequiredItem.getAttribute("max-length")) {
+                } else if (formRequiredItem.hasAttribute("data-max-length")) {
+                    if (formRequiredItem.value.length > formRequiredItem.getAttribute("data-max-length")) {
                         this.addError(formRequiredItem);
                         error++;
                     }
