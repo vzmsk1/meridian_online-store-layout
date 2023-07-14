@@ -1,13 +1,13 @@
-## languages and tools that i used:
+## tools i used:
 
-+ html, css
-+ js
-+ sass (scss)
-+ bem methodology
-+ slider - swiper
-+ icons font
-+ grid, flexbox
-+ pixel perfect
+- html, css
+- js
+- sass (scss)
+- bem methodology
+- slider-swiper
+- icons font
+- grid, flexbox
+- pixel perfect
 
 ## home page
 

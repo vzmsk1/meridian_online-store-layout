@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230207132628">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230714115637">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
 			<div class="header__body">
 				<div class="header__container">
 					<div class="header__column header__column_first">
-						<button type="button" class="header__burger icon-menu">
+						<button type="button" class="header__hamburger hamburger">
 							<span></span>
 						</button>
 						<div class="header__menu menu">
@@ -39,19 +39,19 @@
 								<nav class="menu__navigation">
 									<ul class="menu__list">
 										<li class="menu__item">
-											<a href="#" class="menu__link"><span>Home</span></a>
+											<a href="#" class="menu__link link"><span class="link__text">Home</span></a>
 										</li>
 										<li class="menu__item">
-											<a href="#" class="menu__link"><span>Products</span></a>
+											<a href="#" class="menu__link link"><span class="link__text">Products</span></a>
 										</li>
 										<li class="menu__item">
-											<a href="#" class="menu__link"><span>Showroom</span></a>
+											<a href="#" class="menu__link link"><span class="link__text">Showroom</span></a>
 										</li>
 										<li class="menu__item">
-											<a href="#" class="menu__link"><span>About Us</span></a>
+											<a href="#" class="menu__link link"><span class="link__text">About Us</span></a>
 										</li>
 										<li class="menu__item">
-											<a href="#" class="menu__link"><span>Contact</span></a>
+											<a href="#" class="menu__link link"><span class="link__text">Contact</span></a>
 										</li>
 									</ul>
 								</nav>
@@ -59,18 +59,18 @@
 						</div>
 					</div>
 					<div class="header__column header__column_central">
-						<a href="#" class="header__logo"><img src="img/logo.svg" alt="" /></a>
+						<a href="#" class="header__logo"><img data-src="img/logo.svg" alt="" aria-hidden="true" class="header__logo-img" /></a>
 					</div>
 					<div class="header__column header__column_last">
 						<ul data-da=".menu__body,991.98,last" class="header__list list-header">
 							<li class="list-header__item">
-								<a href="#" class="list-header__link"><span>Dealer Login</span></a>
+								<a href="#" class="list-header__link link"><span class="link__text">Dealer Login</span></a>
 							</li>
 							<li class="list-header__item">
-								<a href="#" class="list-header__link"><span>Become A Dealer</span></a>
+								<a href="#" class="list-header__link link"><span class="link__text">Become A Dealer</span></a>
 							</li>
 							<li class="list-header__item">
-								<a href="#" class="list-header__link"><span>Find A Retail</span></a>
+								<a href="#" class="list-header__link link"><span class="link__text">Find A Retail</span></a>
 							</li>
 						</ul>
 						<div class="header__actions actions-header">
@@ -109,7 +109,9 @@
 								<a href="#" class="breadcrumbs__link">SIAM</a>
 							</li>
 							<li class="breadcrumbs__item">
-								<span>Siam Set 1 – 6 piece Corner</span>
+								<h1 class="breadcrumbs__title">
+									Siam Set 1 – 6 piece Corner
+								</h1>
 							</li>
 						</ul>
 					</nav>
@@ -121,32 +123,32 @@
 						<div class="hero-product__columns">
 							<div class="hero-product__carousel">
 								<div class="hero-product__mainslider product-mainslider swiper">
-									<div class="product-mainslider__wrapper swiper-wrapper">
-										<div class="product-mainslider__slide slide-product-mainslider swiper-slide">
+									<div data-gallery class="product-mainslider__wrapper swiper-wrapper">
+										<a href="img/product-slider/01.jpg" class="product-mainslider__slide slide-product-mainslider swiper-slide">
 											<div class="slide-product-mainslider__image-ibg">
-												<picture><source data-srcset="img/product-slider/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/01.jpg" alt="" /></picture>
+												<picture><source data-srcset="img/product-slider/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/01.jpg" alt="alma velvet armless / overall item view" class="slide-product-mainslider__image" /></picture>
 											</div>
-										</div>
-										<div class="product-mainslider__slide slide-product-mainslider swiper-slide">
+										</a>
+										<a href="img/product-slider/02.jpg" class="product-mainslider__slide slide-product-mainslider swiper-slide">
 											<div class="slide-product-mainslider__image-ibg">
-												<picture><source data-srcset="img/product-slider/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/02.jpg" alt="" /></picture>
+												<picture><source data-srcset="img/product-slider/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/02.jpg" alt="alma velvet armless / right side view" class="slide-product-mainslider__image" /></picture>
 											</div>
-										</div>
-										<div class="product-mainslider__slide slide-product-mainslider swiper-slide">
+										</a>
+										<a href="img/product-slider/03.jpg" class="product-mainslider__slide slide-product-mainslider swiper-slide">
 											<div class="slide-product-mainslider__image-ibg">
-												<picture><source data-srcset="img/product-slider/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/03.jpg" alt="" /></picture>
+												<picture><source data-srcset="img/product-slider/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/03.jpg" alt="alma velvet armless / left side view" class="slide-product-mainslider__image" /></picture>
 											</div>
-										</div>
-										<div class="product-mainslider__slide slide-product-mainslider swiper-slide">
+										</a>
+										<a href="img/product-slider/04.jpg" class="product-mainslider__slide slide-product-mainslider swiper-slide">
 											<div class="slide-product-mainslider__image-ibg">
-												<picture><source data-srcset="img/product-slider/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/04.jpg" alt="" /></picture>
+												<picture><source data-srcset="img/product-slider/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/04.jpg" alt="alma velvet armless / leg sets" class="slide-product-mainslider__image" /></picture>
 											</div>
-										</div>
-										<div class="product-mainslider__slide slide-product-mainslider swiper-slide">
+										</a>
+										<a href="img/product-slider/05.jpg" class="product-mainslider__slide slide-product-mainslider swiper-slide">
 											<div class="slide-product-mainslider__image-ibg">
-												<picture><source data-srcset="img/product-slider/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/05.jpg" alt="" /></picture>
+												<picture><source data-srcset="img/product-slider/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-slider/05.jpg" alt="alma velvet armless / single item" class="slide-product-mainslider__image" /></picture>
 											</div>
-										</div>
+										</a>
 									</div>
 									<div class="product-mainslider__pagination pagination-product-mainslider swiper-pagination"></div>
 								</div>
@@ -177,9 +179,9 @@
 							<div class="hero-product__info info-hero-product">
 								<div class="info-hero-product__wrap">
 									<div class="info-hero-product__main main-info-hero-product">
-										<span class="main-info-hero-product__title">
+										<h2 class="main-info-hero-product__title">
 											Alma Velvet Armless
-										</span>
+										</h2>
 										<div class="main-info-hero-product__price price">
 											<p class="price__wrap">
 												<span class="price__text price__text_final">£1,500.00</span>
@@ -189,26 +191,8 @@
 												<span class="price__text price__text_sale">40% Off</span>
 											</p>
 										</div>
-										<div class="main-info-hero-product__review review-info-hero-product">
-											<div class="rating rating_set">
-												<div class="rating__body">
-													<div class="rating__active"></div>
-													<div class="rating__items">
-														<input type="radio" class="rating__item" value="1" name="rating" />
-														<input type="radio" class="rating__item" value="2" name="rating" />
-														<input type="radio" class="rating__item" value="3" name="rating" />
-														<input type="radio" class="rating__item" value="4" name="rating" />
-														<input type="radio" class="rating__item" value="5" name="rating" />
-													</div>
-												</div>
-												<div class="rating__value">5</div>
-											</div>
-											<p class="review-info-hero-product__text">
-												(200 customer review)
-											</p>
-										</div>
 										<button type="button" class="main-info-hero-product__btn btn">
-											<span class="text text_wide">ADD TO CART</span>
+											<span class="btn__text txt txt_wide">ADD TO CART</span>
 										</button>
 									</div>
 									<div class="info-hero-product__payment payment-info-hero-product">
@@ -217,26 +201,26 @@
 										</p>
 										<ul class="payment-info-hero-product__list payment">
 											<li class="payment__item">
-												<a href="#" class="payment__link"><picture><source srcset="img/payment/01.webp" type="image/webp"><img src="img/payment/01.png" alt="" /></picture></a>
+												<a href="#" class="payment__link"><picture><source data-srcset="img/payment/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/01.png" alt="master card" /></picture></a>
 											</li>
 											<li class="payment__item">
-												<a href="#" class="payment__link"><picture><source srcset="img/payment/02.webp" type="image/webp"><img src="img/payment/02.png" alt="" /></picture></a>
+												<a href="#" class="payment__link"><picture><source data-srcset="img/payment/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/02.png" alt="visa" /></picture></a>
 											</li>
 											<li class="payment__item">
-												<a href="#" class="payment__link"><picture><source srcset="img/payment/03.webp" type="image/webp"><img src="img/payment/03.png" alt="" /></picture></a>
+												<a href="#" class="payment__link"><picture><source data-srcset="img/payment/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/03.png" alt="google pay" /></picture></a>
 											</li>
 											<li class="payment__item">
-												<a href="#" class="payment__link"><picture><source srcset="img/payment/04.webp" type="image/webp"><img src="img/payment/04.png" alt="" /></picture></a>
+												<a href="#" class="payment__link"><picture><source data-srcset="img/payment/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/04.png" alt="apple pay" /></picture></a>
 											</li>
 										</ul>
 									</div>
 									<div data-da=".info-hero-product__wrap,1024,1" class="info-hero-product__delivery delivery-info-hero-product">
 										<div class="delivery-info-hero-product__wrap _icon-delivery">
 											<div class="delivery-info-hero-product__content">
-												<span class="delivery-info-hero-product__heading">
+												<h3 class="delivery-info-hero-product__heading">
 													Free UK Delivery
-												</span>
-												<p class="delivery-info-hero-product__text text">
+												</h3>
+												<p class="delivery-info-hero-product__text txt">
 													Order now and enjoy free delivery on us!
 													Restrictions apply.
 												</p>
@@ -305,11 +289,11 @@
 				<div class="product__image-text image-text">
 					<div class="image-text__container">
 						<div class="image-text__image-ibg">
-							<picture><source data-srcset="img/image-text/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/image-text/01.png" alt="" /></picture>
+							<picture><source data-srcset="img/image-text/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/image-text/01.png" alt="" aria-hidden="true" /></picture>
 						</div>
 						<div class="image-text__content">
 							<h2 class="image-text__title h2">Cast Aluminium Furniture</h2>
-							<p class="image-text__text text">
+							<p class="image-text__text txt">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								Mauris non suspendisse vivamus convallis proin. Molestie
 								pulvinar tortor neque adipiscing mattis diam nibh nunc quis.
@@ -335,7 +319,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										Can I return my furniture?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											In the unlikely event that you wish to return your
 											furniture, Sabai Living offer a 30-day returns policy.
@@ -368,7 +352,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										Can your furniture be left outside?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit.
 											Reiciendis non, quam autem inventore animi maiores,
@@ -391,7 +375,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										What does powder coated mean?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum, dolor sit amet consectetur adipisicing
 											elit. Consequatur consequuntur ipsum rem, corporis non
@@ -414,7 +398,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										What is thermosetting polymer?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit.
 											Reiciendis non, quam autem inventore animi maiores,
@@ -437,7 +421,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										Are your cushions machine washable?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum, dolor sit amet consectetur adipisicing
 											elit. Consequatur consequuntur ipsum rem, corporis non
@@ -460,7 +444,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										Do the products fade in sunlight?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit.
 											Reiciendis non, quam autem inventore animi maiores,
@@ -483,7 +467,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										How do I care for my furniture?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum, dolor sit amet consectetur adipisicing
 											elit. Consequatur consequuntur ipsum rem, corporis non
@@ -506,7 +490,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										Is the furniture 'flat packed' or 'fully assembled'?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit.
 											Reiciendis non, quam autem inventore animi maiores,
@@ -529,7 +513,7 @@
 									<button type="button" data-spoiler class="spoilers__title">
 										When can I expect my item to be delivered?
 									</button>
-									<div class="spoilers__body text">
+									<div class="spoilers__body txt">
 										<p class="spoilers__text">
 											Lorem ipsum, dolor sit amet consectetur adipisicing
 											elit. Consequatur consequuntur ipsum rem, corporis non
@@ -557,52 +541,56 @@
 						<h2 class="sets-product__title h2">
 							Shop Our Other Popular Sets
 						</h2>
-						<div class="sets-product__grid">
+						<div class="sets-product__row">
 							<a href="#" class="sets-product__card shopify-card">
-								<div class="shopify-card__image-ibg">
-									<picture><source data-srcset="img/shopify/sets/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/01.png" alt="Alma Velvet Armless" /></picture>
+								<div class="shopify-card__image-wrap">
+									<picture><source data-srcset="img/shopify/sets/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/01.png" alt="Alma Velvet Armless" class="shopify-card__image" /></picture>
 								</div>
 								<div class="shopify-card__info">
-									<span class="shopify-card__heading">Alma Velvet Armless</span>
+									<h3 class="shopify-card__heading">Alma Velvet Armless</h3>
 									<span class="shopify-card__price">£3,400.00</span>
 									<div class="shopify-card__btn btn">
-										<span class="text">View Set</span>
+										<span class="btn__text txt">View Set</span>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="sets-product__card shopify-card">
-								<div class="shopify-card__image-ibg">
-									<picture><source data-srcset="img/shopify/sets/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/02.png" alt="Alma Velvet Armless Set" /></picture>
+								<div class="shopify-card__image-wrap">
+									<picture><source data-srcset="img/shopify/sets/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/02.png" alt="Alma Velvet Armless Set" class="shopify-card__image" /></picture>
 								</div>
 								<div class="shopify-card__info">
-									<span class="shopify-card__heading">Alma Velvet Armless Set</span>
+									<h3 class="shopify-card__heading">
+										Alma Velvet Armless Set
+									</h3>
 									<span class="shopify-card__price">£3,600.00</span>
 									<div class="shopify-card__btn btn">
-										<span class="text">View Set</span>
+										<span class="btn__text txt">View Set</span>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="sets-product__card shopify-card">
-								<div class="shopify-card__image-ibg">
-									<picture><source data-srcset="img/shopify/sets/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/03.png" alt="Alina Velvet Set" /></picture>
+								<div class="shopify-card__image-wrap">
+									<picture><source data-srcset="img/shopify/sets/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/03.png" alt="Alina Velvet Set" class="shopify-card__image" /></picture>
 								</div>
 								<div class="shopify-card__info">
-									<span class="shopify-card__heading">Alina Velvet Set</span>
+									<h3 class="shopify-card__heading">Alina Velvet Set</h3>
 									<span class="shopify-card__price">£3,700.00</span>
 									<div class="shopify-card__btn btn">
-										<span class="text">View Set</span>
+										<span class="btn__text txt">View Set</span>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="sets-product__card shopify-card">
-								<div class="shopify-card__image-ibg">
-									<picture><source data-srcset="img/shopify/sets/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/04.png" alt="Serpentine Velvet Sofa" /></picture>
+								<div class="shopify-card__image-wrap">
+									<picture><source data-srcset="img/shopify/sets/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/shopify/sets/04.png" alt="Serpentine Velvet Sofa" class="shopify-card__image" /></picture>
 								</div>
 								<div class="shopify-card__info">
-									<span class="shopify-card__heading">Serpentine Velvet Sofa</span>
+									<h3 class="shopify-card__heading">
+										Serpentine Velvet Sofa
+									</h3>
 									<span class="shopify-card__price">£4,600.00</span>
 									<div class="shopify-card__btn btn">
-										<span class="text">View Set</span>
+										<span class="btn__text txt">View Set</span>
 									</div>
 								</div>
 							</a>
@@ -614,313 +602,118 @@
 						<div class="reviews-product__head">
 							<h2 class="reviews-product__title h2">Reviews</h2>
 							<button data-popup="#writeReview" type="button" class="reviews-product__btn btn">
-								<span class="text">Write A Review</span>
+								<span class="btn__text txt">Write A Review</span>
 							</button>
 						</div>
 						<div class="reviews-product__body">
-							<div class="reviews-product__slider slider-reviews-product swiper">
-								<div class="slider-reviews-product__wrapper swiper-wrapper">
-									<div class="slider-reviews-product__slide slide-slider-reviews-product swiper-slide">
-										<div class="slide-slider-reviews-product__list">
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Darrell Steward</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														I Like This Product!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>1st, 2022</span>
-													</p>
-												</div>
-											</div>
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Albert Flores</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														Recommended For You!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>2nd, 2022</span>
-													</p>
-												</div>
-											</div>
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Amanda Spencer</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														I Love This Product!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>4th, 2022</span>
-													</p>
-												</div>
-											</div>
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Cameron Williamson</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														Awesome Product!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>5th, 2022</span>
-													</p>
-												</div>
-											</div>
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Leslie Alexander</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														This is so Satisfying!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>6th, 2022</span>
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="slider-reviews-product__slide slide-slider-reviews-product swiper-slide">
-										<div class="slide-slider-reviews-product__list">
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Darrell Steward</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														I Like This Product!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>1st, 2022</span>
-													</p>
-												</div>
-											</div>
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Albert Flores</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														Recommended For You!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>2nd, 2022</span>
-													</p>
-												</div>
-											</div>
-											<div class="slide-slider-reviews-product__review review-item">
-												<div class="review-item__column">
-													<span class="review-item__name">Amanda Spencer</span>
-													<a href="#" class="review-item__verification _icon-check">Verified Buy</a>
-													<div class="review-item__rating">
-														<div class="rating rating_set">
-															<div class="rating__body">
-																<div class="rating__active"></div>
-																<div class="rating__items">
-																	<input type="radio" class="rating__item" value="1" name="rating" />
-																	<input type="radio" class="rating__item" value="2" name="rating" />
-																	<input type="radio" class="rating__item" value="3" name="rating" />
-																	<input type="radio" class="rating__item" value="4" name="rating" />
-																	<input type="radio" class="rating__item" value="5" name="rating" />
-																</div>
-															</div>
-															<div class="rating__value">5</div>
-														</div>
-													</div>
-												</div>
-												<div class="review-item__column">
-													<span class="review-item__heading">
-														I Love This Product!
-													</span>
-													<p class="review-item__text text">
-														Nam libero tempore, cum soluta nobis est eligendi
-														optio cumque nihil impedit quo minus id quod me
-														placeat facere possimus, omnis voluptas assumenda.
-													</p>
-												</div>
-												<div class="review-item__column">
-													<p class="review-item__date">
-														February <span>4th, 2022</span>
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
+							<div class="reviews-product__item item-reviews-product">
+								<div class="item-reviews-product__column">
+									<span class="item-reviews-product__name">Darrell Steward</span>
+									<a href="#" class="item-reviews-product__verification _icon-check">Verified Buy</a>
 								</div>
-								<div class="slider-reviews-product__control slider-control">
-									<button class="slider-control__arrow slider-control__arrow_prev _icon-sl-arrow"></button>
-									<div class="slider-control__pagination swiper-pagination"></div>
-									<button class="slider-control__arrow slider-control__arrow_next _icon-sl-arrow"></button>
+								<div class="item-reviews-product__column">
+									<h4 class="item-reviews-product__heading">
+										I Like This Product!
+									</h4>
+									<p class="item-reviews-product__text txt">
+										Nam libero tempore, cum soluta nobis est eligendi optio
+										cumque nihil impedit quo minus id quod me placeat facere
+										possimus, omnis voluptas assumenda.
+									</p>
+								</div>
+								<div class="item-reviews-product__column">
+									<time datetime="2022-02-01" class="item-reviews-product__date">
+										February
+										<span class="item-reviews-product__date-txt">1st, 2022</span>
+									</time>
+								</div>
+							</div>
+							<div class="reviews-product__item item-reviews-product">
+								<div class="item-reviews-product__column">
+									<span class="item-reviews-product__name">Albert Flores</span>
+									<a href="#" class="item-reviews-product__verification _icon-check">Verified Buy</a>
+								</div>
+								<div class="item-reviews-product__column">
+									<h4 class="item-reviews-product__heading">
+										Recommended For You!
+									</h4>
+									<p class="item-reviews-product__text txt">
+										Nam libero tempore, cum soluta nobis est eligendi optio
+										cumque nihil impedit quo minus id quod me placeat facere
+										possimus, omnis voluptas assumenda.
+									</p>
+								</div>
+								<div class="item-reviews-product__column">
+									<time datetime="2022-02-02" class="item-reviews-product__date">
+										February
+										<span class="item-reviews-product__date-txt">2nd, 2022</span>
+									</time>
+								</div>
+							</div>
+							<div class="reviews-product__item item-reviews-product">
+								<div class="item-reviews-product__column">
+									<span class="item-reviews-product__name">Amanda Spencer</span>
+									<a href="#" class="item-reviews-product__verification _icon-check">Verified Buy</a>
+								</div>
+								<div class="item-reviews-product__column">
+									<h4 class="item-reviews-product__heading">
+										I Love This Product!
+									</h4>
+									<p class="item-reviews-product__text txt">
+										Nam libero tempore, cum soluta nobis est eligendi optio
+										cumque nihil impedit quo minus id quod me placeat facere
+										possimus, omnis voluptas assumenda.
+									</p>
+								</div>
+								<div class="item-reviews-product__column">
+									<time datetime="2022-02-04" class="item-reviews-product__date">
+										February
+										<span class="item-reviews-product__date-txt">4th, 2022</span>
+									</time>
+								</div>
+							</div>
+							<div class="reviews-product__item item-reviews-product">
+								<div class="item-reviews-product__column">
+									<span class="item-reviews-product__name">Cameron Williamson</span>
+									<a href="#" class="item-reviews-product__verification _icon-check">Verified Buy</a>
+								</div>
+								<div class="item-reviews-product__column">
+									<h4 class="item-reviews-product__heading">
+										Awesome Product!
+									</h4>
+									<p class="item-reviews-product__text txt">
+										Nam libero tempore, cum soluta nobis est eligendi optio
+										cumque nihil impedit quo minus id quod me placeat facere
+										possimus, omnis voluptas assumenda.
+									</p>
+								</div>
+								<div class="item-reviews-product__column">
+									<time datetime="2022-02-05" class="item-reviews-product__date">
+										February
+										<span class="item-reviews-product__date-txt">5th, 2022</span>
+									</time>
+								</div>
+							</div>
+							<div class="reviews-product__item item-reviews-product">
+								<div class="item-reviews-product__column">
+									<span class="item-reviews-product__name">Leslie Alexander</span>
+									<a href="#" class="item-reviews-product__verification _icon-check">Verified Buy</a>
+								</div>
+								<div class="item-reviews-product__column">
+									<h4 class="item-reviews-product__heading">
+										This is so Satisfying!
+									</h4>
+									<p class="item-reviews-product__text txt">
+										Nam libero tempore, cum soluta nobis est eligendi optio
+										cumque nihil impedit quo minus id quod me placeat facere
+										possimus, omnis voluptas assumenda.
+									</p>
+								</div>
+								<div class="item-reviews-product__column">
+									<time datetime="2022-02-06" class="item-reviews-product__date">
+										February
+										<span class="item-reviews-product__date-txt">6th, 2022</span>
+									</time>
 								</div>
 							</div>
 						</div>
@@ -932,31 +725,31 @@
 			<div class="footer__connect connect-footer">
 				<div class="connect-footer__container">
 					<div class="connect-footer__column">
-						<span class="connect-footer__heading h2">How Can We Help You?</span>
-						<p class="connect-footer__text text">
+						<h2 class="connect-footer__heading h2">How Can We Help You?</h2>
+						<p class="connect-footer__text txt">
 							We pride ourselves on superior customer service. Speak to a member of
 							our sales team to help with your order.
 						</p>
-						<a href="mailto:support@Meridian.com" class="connect-footer__mail text">Get In Touch support@Meridian.com</a>
+						<a href="mailto:support@Meridian.com" class="connect-footer__mail txt">Get In Touch support@Meridian.com</a>
 					</div>
 					<div class="connect-footer__column">
 						<a href="tel:01789339533" class="connect-footer__btn btn _icon-phone">
-							<span>01789 339533</span>
+							<span class="btn__text">01789 339533</span>
 						</a>
-						<p class="connect-footer__info text">8am to 6pm, 7 days a week</p>
+						<p class="connect-footer__info txt">8am to 6pm, 7 days a week</p>
 					</div>
 				</div>
 				<div class="connect-footer__image-ibg bg">
-					<picture><source data-srcset="img/bg-images/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/bg-images/03.jpg" alt="" /></picture>
+					<picture><source data-srcset="img/bg-images/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/bg-images/03.jpg" alt="" aria-hidden="true" /></picture>
 				</div>
 			</div>
 			<div class="footer__body">
 				<div class="footer__container">
-					<a href="#" class="footer__logo"><img src="img/letter-logo.svg" alt="" /></a>
-					<div class="footer__main text">
+					<a href="#" class="footer__logo-wrap"><img data-src="img/letter-logo.svg" alt="" aria-hidden="true" class="footer__logo" /></a>
+					<div class="footer__main txt">
 						<div class="footer__item item-footer">
-							<span class="item-footer__heading">Head Office</span>
-							<p class="item-footer__text text">
+							<h3 class="item-footer__heading">Head Office</h3>
+							<p class="item-footer__text txt">
 								32 Plum St, Trenton, NJ 08638, United States
 							</p>
 							<ul class="item-footer__list list-item-footer">
@@ -969,7 +762,7 @@
 							</ul>
 						</div>
 						<div class="footer__item item-footer">
-							<span class="item-footer__heading">Product</span>
+							<h3 class="item-footer__heading">Product</h3>
 							<ul class="item-footer__list list-item-footer">
 								<li class="list-item-footer__item">
 									<a href="#" class="list-item-footer__link"><span>New Arrival</span></a>
@@ -998,7 +791,7 @@
 							</ul>
 						</div>
 						<div class="footer__item item-footer">
-							<span class="item-footer__heading">Help</span>
+							<h3 class="item-footer__heading">Help</h3>
 							<ul class="item-footer__list list-item-footer">
 								<li class="list-item-footer__item">
 									<a href="#" class="list-item-footer__link"><span>FAQ</span></a>
@@ -1012,18 +805,18 @@
 							</ul>
 						</div>
 						<div class="footer__item item-footer">
-							<span class="item-footer__heading">
+							<h3 class="item-footer__heading">
 								Join Meridian for Exclusive Offers
-							</span>
+							</h3>
 							<form data-dev data-popup-message="#formMessage" action="#" class="item-footer__form form-item-footer form">
 								<div class="form-item-footer__input">
 									<input data-validate data-required="email" autocomplete="off" type="text" name="form[]" data-error placeholder="Email address" class="input" />
 								</div>
 								<button type="submit" class="form-item-footer__button">
-									<span class="_icon-sl-arrow"></span>
+									<span class="form-item-footer__button-txt _icon-sl-arrow"></span>
 								</button>
 							</form>
-							<p class="item-footer__text text">
+							<p class="item-footer__text txt">
 								Our newsletter is packed full of style ideas, new products and
 								exclusive disounts. We are GDPR compliant, your information is
 								secure with us.
@@ -1031,8 +824,8 @@
 						</div>
 					</div>
 					<div class="footer__row">
-						<span class="footer__heading mobile-show">Follow Us</span>
-						<ul class="footer__copyright copyright-footer text">
+						<h3 class="footer__heading _mobile-show">Follow Us</h3>
+						<ul class="footer__copyright copyright-footer txt">
 							<li class="copyright-footer__item">
 								<a href="#" class="copyright-footer__link"><span>Terms & Conditions</span></a>
 							</li>
@@ -1054,16 +847,16 @@
 					</div>
 					<ul class="footer__payment payment">
 						<li class="payment__item">
-							<a href="#" class="payment__link"><picture><source srcset="img/payment/01.webp" type="image/webp"><img src="img/payment/01.png" alt="" /></picture></a>
+							<a href="#" class="payment__link"><picture><source data-srcset="img/payment/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/01.png" alt="" aria-hidden="true" /></picture></a>
 						</li>
 						<li class="payment__item">
-							<a href="#" class="payment__link"><picture><source srcset="img/payment/02.webp" type="image/webp"><img src="img/payment/02.png" alt="" /></picture></a>
+							<a href="#" class="payment__link"><picture><source data-srcset="img/payment/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/02.png" alt="" aria-hidden="true" /></picture></a>
 						</li>
 						<li class="payment__item">
-							<a href="#" class="payment__link"><picture><source srcset="img/payment/03.webp" type="image/webp"><img src="img/payment/03.png" alt="" /></picture></a>
+							<a href="#" class="payment__link"><picture><source data-srcset="img/payment/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/03.png" alt="" aria-hidden="true" /></picture></a>
 						</li>
 						<li class="payment__item">
-							<a href="#" class="payment__link"><picture><source srcset="img/payment/04.webp" type="image/webp"><img src="img/payment/04.png" alt="" /></picture></a>
+							<a href="#" class="payment__link"><picture><source data-srcset="img/payment/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payment/04.png" alt="" aria-hidden="true" /></picture></a>
 						</li>
 					</ul>
 				</div>
@@ -1099,12 +892,13 @@
 				<button data-close type="button" class="popup__close">
 					<span class="popup__icon _icon-plus"></span>
 				</button>
-				<form data-dev class="review-form form">
+				<form data-dev action="#" class="review-form form">
 					<div class="review-form__head head-review-form">
 						<div class="head-review-form__content">
-							<span class="head-review-form__heading">Please share your experience</span>
+							<h2 class="head-review-form__heading"></h2>
+							Please share your experience
 							<span class="head-review-form__product-name">Alma Velvet Armless</span>
-							<p class="head-review-form__text text">
+							<p class="head-review-form__text txt">
 								Your feedback will help other shoppers make good choices, and
 								we'll use it to improve our products.
 							</p>
@@ -1148,7 +942,7 @@
 						</div>
 						<div class="review-form__actions">
 							<button type="submit" class="review-form__btn btn">
-								<span class="text">Submit</span>
+								<span class="btn__text txt">Submit</span>
 							</button>
 						</div>
 					</div>
@@ -1156,7 +950,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230207132628"></script>
+	<script src="js/app.min.js?_v=20230714115637"></script>
 </body>
 
 </html>
